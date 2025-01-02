@@ -4,6 +4,10 @@ body {
     padding: 0;
     background: url('img/background.svg') no-repeat center center fixed;
     background-size: cover;
+    overflow: hidden; /* blokuje przwijanie */
+    user-select: none; /* blokuje kopiowanie tekstu */
+    position: relative; /* Upewnia się, że element body jest nadrzędny */
+    z-index: -100; /* Tło zawsze w najniższej warstwie */
 }
 
 header {
