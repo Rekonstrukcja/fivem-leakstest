@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="modal-overlay">
+        <div id="modal">
+            <p>test</p>
+            <button id="modal-ok-button">OK</button>
+        </div>
+    </div>
+    <header>
+        <h1>Server Name</h1>
+        <div class="icon-container">
+            <a href="index.html" class="home-link">
+                <img src="../img/home.png" alt="Home">
+            </a>
+            <a href="https://discord.gg/CHrbhzTAvC" class="discord-link">
+                <img src="../img/discord.png" alt="Discord">
+            </a>
+        </div>
+    </header>
+    <main>
+        <div id="gradient-rectangle"></div>
+        <section id="server-info">
+            <p>tu nie ma puenty i nie ma riposty i właśnie ci pęka moralny kręgosłup</p>
+        </section>
+    </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const modalOverlay = document.getElementById('modal-overlay');
+            const modalOkButton = document.getElementById('modal-ok-button');
+            const hasVisited = localStorage.getItem('hasVisited');
+
+            if (!hasVisited) {
+                modalOverlay.classList.add('show');
+                localStorage.setItem('hasVisited', 'true');
+            }
+
+            modalOkButton.addEventListener('click', function() {
+                modalOverlay.classList.remove('show');
+            });
+        });
+    </script>
+</body>
+</html>

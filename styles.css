@@ -1,0 +1,251 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('img/background.svg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: center; /* Center the title */
+    align-items: center;
+    padding: 30px; /* Increase padding to make the header larger */
+    background-color: #151720; /* Change background color */
+    color: white;
+    position: fixed; /* Make the header fixed */
+    width: 100%; /* Ensure the header spans the full width */
+    top: 0; /* Position it at the top */
+    z-index: 1000; /* Ensure it is above other content */
+    border-bottom: 1px solid #a69f9d; /* Add bottom border */
+}
+
+header h1 {
+    margin: 0;
+    position: absolute; /* Position the title absolutely */
+    left: 50%;
+    transform: translateX(-50%); /* Center the title */
+}
+
+header .discord-link {
+    margin-left: 10px; /* Add margin to the left */
+    width: 12px; /* Set very small icon size */
+    height: 12px; /* Set very small icon size */
+}
+
+header .home-link {
+    margin-left: 10px; /* Add margin to the left */
+    width: 10px; /* Set very small icon size */
+    height: 10px; /* Set very small icon size */
+}
+
+header .discord-link img {
+    margin-left: -50px; /* Add margin to the left */
+    margin-top: -13px;
+    width: 38px; /* Set very, very small icon size */
+    height: 38px; /* Set very, very small icon size */
+}
+
+header .home-link img {
+    margin-left: -1580px; 
+    margin-top: -13px; /* Add margin to the top */
+    width: 38px; /* Set very, very small icon size */
+    height: 38px; /* Set very, very small icon size */
+}   
+
+header .icon-container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 70px; /* Move the icons and search input slightly to the left */
+}
+
+header input {
+    padding: 10px 40px 10px 20px; /* Add padding for the icon */
+    font-size: 18px; /* Increase font size */
+    border: 1px solid #726b60; /* Change border color */
+    border-radius: 20px; /* Make it slightly rounded */
+    background-color: rgba(255, 255, 255, 0.2); /* Make it more transparent */
+    color: #e0dfde; /* Change text color */
+    background-image: url('img/search-icon.png'); /* Add magnifying glass icon */
+    background-size: 20px 20px; /* Size of the icon */
+    background-repeat: no-repeat;
+    background-position: 10px center; /* Position the icon */;
+}
+
+main {
+    padding: 80px 20px 20px 20px; /* Add top padding to account for the fixed header */
+    position: relative; /* Ensure the rectangle is positioned correctly */
+}
+
+#gradient-rectangle {
+    position: absolute; /* PROSTOKĄT WIEKSZY */
+    top: 150px;
+    left: 100px;
+    width: 90%;
+    height: 90vh; /* Adjust height as needed */
+    background: linear-gradient(to bottom, #151720, #1a1c27);
+    border: 1px solid #6f685d; /* Add thin border */
+    border-radius: 20px; /* Make it rounded */
+    z-index: -1; /* Ensure it is behind other content */
+}
+
+#server-list { /* KWADRATY SERWERWE2 */
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Ensure the list starts from the left */
+    margin-left: 100px; /* Move the squares slightly to the right */
+}
+
+#server-list li { /* KWADRATY SERWEROWE */
+    position: relative; /* Ensure the pseudo-element is positioned correctly */
+    margin: 100px 20px; /* Add margin to move them slightly down */
+    margin-right: 10px;
+    text-align: left; /* Align text to the left */
+    flex: 1 0 15%; /* Increase the width */
+    max-width: 220px; /* Increase the maximum width */
+    height: 200px; /* WYSSOKOSC KWADRATA */
+    border: 1px solid #56dea4; /* Add border */
+    border-radius: 20px; /* Make it rounded */
+    padding: 20px; /* Adjust padding */
+    overflow: hidden; /* Hide overflow for the pseudo-element */
+    transition: background 0.2s ease-in-out, opacity 0.2s ease-in-out; /* Slow down the transition */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+#server-list li:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top left, #120b44, #23223a);
+    opacity: 0;
+    transition: opacity 1s ease-in-out; /* Slow down the transition */
+    border-radius: 20px; /* Match the border radius */
+}
+
+#server-list li:hover:before {
+    opacity: 0.8; /* Add fade-in effect */
+}
+
+#server-list img { /* LOGO SERWERA */
+    position: relative; /* Ensure the image is above the pseudo-element */
+    width: 100px; /* Set logo size */
+    height: 100px; /* Set logo size */
+    display: block;
+    margin: 0 auto; /* Center the logo */
+}
+
+#server-list p {    /* NAZWA SERWERA  */
+    position: relative; /* Ensure the text is above the pseudo-element */
+    margin: 60px 0 0 0; /* ANIMACJA/POZYCJA */
+    font-size: 18px; /* Set font size */
+    color: #56dea4; /* Set text color */
+    text-align: left; /* Align text to the left */
+    transition: transform 0.3s ease-in-out; /* Add transition for smooth effect */
+}
+
+#server-list li:hover p {
+    transform: translateY(-40px); /* POZYCJA ANIMACJI */
+}
+
+#server-list li:hover .server-description {
+    opacity: 1; /* Show the description */
+    transform: translateY(-70px); /*  POZYCJA ANIMACJI OPISU */
+}
+
+.server-description { /* OPIS SERWERA KWADRAT */
+    position: absolute; /* Position absolutely to avoid affecting the square size */
+    bottom: 10px; /* Position at the bottom */
+    left: 20px; /* Align with padding */
+    right: 20px; /* Align with padding */
+    font-size: 12px !important; /* Set smaller font size */
+    color: #9793a8 !important; /* Set text color */
+    text-align: left; /* Align text to the left */
+    opacity: 0; /* Hide the description initially */
+    transform: translateY(20px); /* Position the description below */
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Add transition for smooth effect */
+}
+
+#item-list ul {
+    list-style-type: disc; /* Use bullet points */
+    padding-left: 20px; /* Add padding to the left */
+}
+
+#item-list li {
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2B2B2B;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+#modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+#modal {
+    background: linear-gradient(to bottom, #2e2c55, #191836);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    transform: translateY(-100%);
+    transition: transform 0.5s ease;
+}
+
+#modal.show {
+    transform: translateY(0);
+}
+
+#modal-overlay.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+#modal button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #56dea4;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#modal button:hover {
+    background-color: #45c494;
+}
