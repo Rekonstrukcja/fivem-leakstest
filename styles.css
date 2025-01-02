@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -252,3 +253,259 @@ main {
 #modal button:hover {
     background-color: #45c494;
 }
+=======
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('img/background.svg') no-repeat center center fixed;
+    background-size: cover;
+    overflow: hidden; /* blokuje przwijanie */
+    user-select: none; /* blokuje kopiowanie tekstu */
+    position: relative; /* chuja robi */
+    z-index: -100; /* kurwisko jebane */
+}
+
+header {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 30px; 
+    background-color: #151720; 
+    color: white;
+    position: fixed; 
+    width: 100%; 
+    top: 0; 
+    z-index: 1000; 
+    border-bottom: 1px solid #a69f9d; 
+}
+
+header h1 {
+    margin: 0;
+    position: absolute; 
+    left: 50%;
+    transform: translateX(-50%); 
+}
+
+header .discord-link {
+    margin-left: 10px; 
+    width: 12px; 
+    height: 12px; 
+}
+
+header .home-link {
+    margin-left: 10px; 
+    width: 10px; 
+    height: 10px; 
+}
+
+header .discord-link img {
+    margin-left: -50px; 
+    margin-top: -13px;
+    width: 38px; 
+    height: 38px; 
+}
+
+header .home-link img {
+    margin-left: -1580px; 
+    margin-top: -13px; 
+    width: 38px; 
+    height: 38px; 
+}   
+
+header .icon-container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 70px; 
+}
+
+header input {
+    padding: 10px 40px 10px 20px; 
+    font-size: 18px;
+    border: 1px solid #726b60; 
+    border-radius: 20px; 
+    background-color: rgba(255, 255, 255, 0.2); 
+    color: #e0dfde; 
+    background-size: 20px 20px; 
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}
+
+main {
+    padding: 80px 20px 20px 20px; 
+    position: relative; 
+}
+
+#gradient-rectangle {
+    position: absolute; 
+    top: 150px;
+    left: 100px;
+    width: 90%;
+    height: 90vh; 
+    background: linear-gradient(to bottom, #151720, #1a1c27);
+    border: 1px solid #6f685d;
+    border-radius: 20px; 
+    z-index: -1; 
+}
+
+#server-list { /* KWADRATY SERWERWE2 */
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; 
+    margin-left: 100px; 
+}
+
+#server-list li { /* KWADRATY SERWEROWE */
+    position: relative; 
+    margin: 100px 20px; 
+    margin-right: 10px;
+    text-align: left; 
+    flex: 1 0 15%; 
+    max-width: 220px; 
+    height: 200px; /* WYSSOKOSC KWADRATA */
+    border: 1px solid #56dea4; 
+    border-radius: 20px; 
+    padding: 20px; 
+    overflow: hidden; 
+    transition: background 0.2s ease-in-out, opacity 0.2s ease-in-out; 
+    cursor: pointer; 
+}
+
+#server-list li:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top left, #120b44, #23223a);
+    opacity: 0;
+    transition: opacity 1s ease-in-out; 
+    border-radius: 20px; 
+}
+
+#server-list li:hover:before {
+    opacity: 0.8; 
+}
+
+#server-list img { /* LOGO SERWERA */
+    position: relative; 
+    width: 100px; 
+    height: 100px; 
+    display: block;
+    margin: 0 auto; 
+}
+
+#server-list p {    /* NAZWA SERWERA  */
+    position: relative; 
+    margin: 60px 0 0 0; /* ANIMACJA/POZYCJA */
+    font-size: 18px; 
+    color: #56dea4; 
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+#server-list li:hover p {
+    transform: translateY(-40px); /* POZYCJA ANIMACJI */
+}
+
+#server-list li:hover .server-description {
+    opacity: 1; 
+    transform: translateY(-70px); /*  POZYCJA ANIMACJI OPISU */
+}
+
+.server-description { /* OPIS SERWERA KWADRAT */
+    position: absolute; 
+    bottom: 10px; 
+    left: 20px;
+    right: 20px; 
+    font-size: 12px !important; 
+    color: #9793a8 !important; 
+    text-align: left; 
+    opacity: 0; 
+    transform: translateY(20px); 
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; 
+}
+
+#item-list ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+#item-list li {
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2B2B2B;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+#modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+#modal {
+    background: linear-gradient(to bottom, #2e2c55, #191836);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    transform: translateY(-100%);
+    transition: transform 0.5s ease;
+}
+
+#modal.show {
+    transform: translateY(0);
+}
+
+#modal-overlay.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+#modal button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #56dea4;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#modal button:hover {
+    background-color: #45c494;
+}
+>>>>>>> Stashed changes
