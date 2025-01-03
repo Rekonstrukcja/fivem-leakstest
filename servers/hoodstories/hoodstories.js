@@ -128,7 +128,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // 999 ZMIEN API ZA KAZDYM RAZEM API SERWERA LICZBA GRACZY
-    fetch('https://igorovh.github.io/fivem-player-list/?serverId=eblxmb')
+    fetch('https://servers-frontend.fivem.net/api/servers/single/eblxmb')
         .then(response => response.json())
         .then(data => {
             const playerCount = data.Data.clients;
