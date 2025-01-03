@@ -1,0 +1,9 @@
+# Włącz przepisywanie adresów
+RewriteEngine On
+
+# Jeśli użytkownik wchodzi na katalog bez podania pliku
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Automatycznie dodaj index.html
+RewriteRule ^(.*)/?$ $1/index.html [L]
