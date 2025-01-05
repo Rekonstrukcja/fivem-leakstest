@@ -10,7 +10,7 @@ body {
 
 header {
     display: flex;
-    justify-content: center; 
+    justify-content: space-between; /* Change to space-between */
     align-items: center;
     padding: 30px; 
     background-color: #151720; /* kolor backgroundu */
@@ -22,8 +22,20 @@ header {
     border-bottom: 1px solid #a69f9d; /*border */
 }
 
+.header-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.header-link {
+    text-decoration: none;
+    color: inherit;
+}
+
 header h1 {
-    margin: 0 0 0 20px; /* dodaj margines po lewej stronie nazwy serwera */
+    margin: 0;
+    margin-top: -23px; /* Adjust this value as needed to raise the text */
 }
 
 header img {
