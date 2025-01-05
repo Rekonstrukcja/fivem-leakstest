@@ -8,12 +8,17 @@ const categories = {
         { name: "Paser", images: ["paser1.png", "paser2.png"], description: "Sprzedajesz u niego rzeczy które wyniesiesz z domu", download: "" },
         { name: "Pralnia", images: ["pralnia1.png", "pralnia2.png"], description: "Pranie kasy, 15% podatku minimum 5000$ musisz miec zeby wyprac", download: "" },
         { name: "ChopShop", images: ["chopshop1.png"], description: "Zlecenia na kradziez samochodow. Max 10 minut na znalezienie auta. Max 20 minut na zakończenie zlecenia. Można łupać od 0 policji. Nagroda: x4599 brudnej", download: "" },
+        
         //         { name: "", images: [""], description: "", download: "" },
     ],
-    copy: [
-        { name: "", images: [""], description: "", download: "" },
-        { name: "", images: [""], description: "", download: "" },
- 
+    narko: [
+        { name: "Suszenie zioła", images: ["suszenie1.png", "suszenie2.png"], description: "Suszenie zioła", download: "" },
+        { name: "Weed Table", images: ["weedtable1.png"], description: "Stół do tworzenia zioła", download: "" },
+        { name: "Zbiórka mety", images: ["meta1.png", "meta3.png"], description: "Zbieranie mety", download: "" },
+        { name: "Przeróbka mety", images: ["meta2.png", "meta4.png"], description: "Przerabianie mety", download: "" },
+        { name: "Zbiórka hery", images: ["hera1.png", "hera2.png"], description: "Zbieranie heroiny", download: "" },
+        { name: "Przeróbka hery", images: ["hera3.png"], description: "", download: "" },
+        { name: "Koka Lab", images: ["koka1.png"], description: "", download: "" },
     ]
         //         { name: "", images: [""], description: "", download: "" }
 };
