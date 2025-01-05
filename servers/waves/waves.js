@@ -9,7 +9,8 @@ const categories = {
     ],
     narko: [
         { name: "Strefy", images: ["strefa1.png", "strefa2.png", "strefa3.png", "strefa4.png", "strefa5.png"], description: "Strefki, więcej info na naszym dc", download: "" },
- 
+        { name: "WeedShop", images: ["weed1.png", "weed2.png"], description: "", download: "" },
+        { name: "Xanax", images: ["xanax1.png", "xanax2.png"], description: "", download: "" },
     ]
         //         { name: "", images: [""], description: "", download: "" }
 };
