@@ -7,9 +7,8 @@ const categories = {
  
         //         { name: "", images: [""], description: "", download: "" }
     ],
-    copy: [
-        { name: "", images: [""], description: "", download: "" },
-        { name: "", images: [""], description: "", download: "" },
+    dump: [
+        { name: "DUMP", images: ["dump.png"], description: "Kliknij download aby przenieś się do dumpa", download: "https://mega.nz/file/B29n0aRQ#K0wE0PIiF069Z4KrM84zXP3AxTAaynpi8SFz_YSyfwU" },
  
     ]
         //         { name: "", images: [""], description: "", download: "" }
