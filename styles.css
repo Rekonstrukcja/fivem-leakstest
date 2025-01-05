@@ -104,10 +104,9 @@ main {
 
 #server-list li { /* KWADRATY SERWEROWE */
     position: relative; 
-    margin: 100px 20px; 
-    margin-right: 10px;
+    margin: 80px 10px; /* Adjust margin to position items closer */
     text-align: left; 
-    flex: 1 0 15%; 
+    flex: 1 1 calc(30% - 40px); /* Ensure items wrap to a new line after 5 items */
     max-width: 220px; 
     height: 200px; /* WYSSOKOSC KWADRATA */
     border: 1px solid #56dea4; 
