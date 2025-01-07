@@ -3,8 +3,9 @@ let currentImages = [];
 
 const categories = {
     lokalizacje: [
-        { name: "Domy", images: ["dom1.png", "dom2.png"], description: "Zlecenie na okradanie domów, itemy omotać możesz w lombardzie", download: "" },
+        { name: "Domy", images: [""], description: "Domy na działce 1218", download: "" },
         { name: "Plantacja zioła", images: ["ziolo.png"], description: "plantacja zioła znajduję się pod COLONY ISLAND numerek 7006", download: "" },
+        { name: "Plecaki", images: [""], description: "Dostępne na działce 4052 | 5k za plecak", download: "" }
         //         { name: "", images: [""], description: "", download: "" }
     ],
     skrypty: [
