@@ -4,7 +4,7 @@ let currentImages = [];
 const categories = {
     lokalizacje: [
         { name: "Wycinka kata", images: ["kat1.png", "kat2.png"], description: "Wyciannie katów z samochodów, udajecie sie do lomabardu aby zakupic diaxa a nastepnie wycinacie katy", download: "" },
- 
+        { name: "Crime Stół", images: ["stol1.png", "stol2.png", "stol3.png"], description: "Można craftować tam kosy", download: "" }
         //         { name: "", images: [""], description: "", download: "" }
     ],
     dump: [
