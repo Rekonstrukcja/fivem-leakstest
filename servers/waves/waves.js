@@ -4,13 +4,14 @@ let currentImages = [];
 const categories = {
     lokalizacje: [
         { name: "DarkShop", images: ["dark1.png", "dark2.png"], description: "Darkshop, uwaga bo jest 30m antytroll", download: "" },
-        { name: "Paser", images: ["paser1.png"], description: "Sprzedaz u niego: naszyjnikvangelico = 2500, pierscionekvangelico = 10000,  szmaragdvangelico = 50000, sztabkabank = 10000, big_tv = 15000, medium_tv = 7500, small_tv = 2000, skrzyniazrzut = 10000,", download: "" },
-        //         { name: "", images: [""], description: "", download: "" }
+        { name: "Tracker", images: ["trucker1.png", "trucker2.png"], description: "Zlecenia na kradziez pojazdu", download: "" },
+        { name: "Domki", images: ["dom1.png", "dom2.png"], description: "Zlecenia na łupanie domów", download: "" },
+        //         { name: "", images: [""], description: "", download: "" },
     ],
     narko: [
         { name: "Strefy", images: ["strefa1.png", "strefa2.png", "strefa3.png", "strefa4.png", "strefa5.png"], description: "Strefki, więcej info na naszym dc", download: "" },
-        { name: "WeedShop", images: ["weed1.png", "weed2.png"], description: "", download: "" },
-        { name: "Xanax", images: ["xanax1.png", "xanax2.png"], description: "", download: "" },
+        { name: "WeedShop", images: ["weed1.png", "weed2.png"], description: "Sklep z rzeczmi do sadzenia", download: "" },
+        { name: "Xanax", images: ["xanax1.png", "xanax2.png"], description: "1 = zbieranie | 2 = przeróbka", download: "" },
     ]
         //         { name: "", images: [""], description: "", download: "" }
 };
