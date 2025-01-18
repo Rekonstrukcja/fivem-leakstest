@@ -4,12 +4,18 @@ let currentImages = [];
 const categories = {
     lokalizacje: [
         { name: "Wycinka kata", images: ["kat1.png", "kat2.png"], description: "Wyciannie katów z samochodów, udajecie sie do lomabardu aby zakupic diaxa a nastepnie wycinacie katy", download: "" },
-        { name: "Crime Stół", images: ["stol1.png", "stol2.png", "stol3.png"], description: "Można craftować tam kosy", download: "" }
+        { name: "Crime Stół", images: ["stol1.png", "stol2.png", "stol3.png"], description: "Można craftować tam kosy", download: "" },
+        { name: "Krystan", images: ["krystian1.png", "krystian2.png", "krystian3.png"], description: "Krystan ktory opierdala info za pojebana cena i szkielet broni", download: "" },
         //         { name: "", images: [""], description: "", download: "" }
     ],
     dump: [
         { name: "DUMP", images: ["dump.png"], description: "Kliknij download aby przenieś się do dumpa", download: "https://mega.nz/file/B29n0aRQ#K0wE0PIiF069Z4KrM84zXP3AxTAaynpi8SFz_YSyfwU" },
  
+    ],
+    napady: [
+        { name: "Fanty z aut", images: ["fanty1.png"], description: "Na serwerze można okradać itemy z aut. Sprawa wygląda tak że szukacie fury która stoi na parkingu, jeżeli w środku fury na siedzeniach znajduje się prop (plecak, pudlo itp). Wchodzicie najlepiej na dach samochodu walicie kopy tak aby wybić szybe, po wybiciu pod E zabieracie fanty. Na dc wiecej info. Dodatkowo na discord znajduje sie trigger na szukanie propow.", download: "" },
+        { name: "Bankomaty", images: ["bankomat1.png"], description: "Dodali na serwer łupanie bankomatów ale w chuj pobugowane ludzie piszą że trzeba wychodzić z serwera i wchodzić żeby następny łupać. Wymagany jest łom.", download: "" }
+
     ]
         //         { name: "", images: [""], description: "", download: "" }
 };
