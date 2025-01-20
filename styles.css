@@ -4,7 +4,7 @@ body {
     padding: 0;
     background: url('img/background.svg') no-repeat center center fixed;
     background-size: cover;
-    /* overflow: hidden; blokuje przwijanie */
+    /* overflow: hidden; /* blokuje przwijanie */
     user-select: none; /* blokuje kopiowanie tekstu */
     position: relative; /* chuja robi */
     z-index: -100; /* kurwisko jebane */
@@ -29,6 +29,7 @@ header h1 {
     position: absolute; 
     left: 50%;
     transform: translateX(-50%); 
+    cursor: pointer; /* Make the header clickable */
 }
 
 header .discord-link {
@@ -185,20 +186,22 @@ main {
 
 
 ::-webkit-scrollbar {
-    width: 12px;
+    width: 10px;
+    opacity: 0; /* Ukryj scrollbar */
+    transition: opacity 0.3s; /* Płynne pojawianie się i znikanie */
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background-color: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #2B2B2B;
-    border-radius: 6px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 #modal-overlay {
