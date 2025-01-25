@@ -25,10 +25,10 @@ function showImage(imageIndex) {
     
     if (currentImages.length > 0) {
         map.src = `img/${currentImages[imageIndex]}`;
-        map.style.display = 'block'; // Wyświetlanie obrazu po jego ustawieniu
-        map.style.objectFit = 'cover'; // 
-        map.style.width = '600px'; // 
-        map.style.height = '600px'; // 
+        map.style.display = 'block';
+        map.style.objectFit = 'cover';
+        map.style.width = '600px';
+        map.style.height = '600px';
         document.getElementById('arrow-container').style.display = 'flex';
     } else {
         map.style.display = 'none';
@@ -90,11 +90,11 @@ document.addEventListener('DOMContentLoaded', function() {
         item.addEventListener('click', function() {
             const category = this.getAttribute('data-category');
             const submenuContainer = document.getElementById('submenu-container');
-            submenuContainer.classList.toggle('show'); // Przełącz klasę wyświetlania dla animacji przesuwania
+            submenuContainer.classList.toggle('show');
 
             if (submenuContainer.classList.contains('show')) {
-                submenuContainer.classList.remove('hide'); // Usuń klasę ukrycia, jeśli jest obecna
-                submenuContainer.innerHTML = ''; // Wyczyść istniejące pozycje podmenu
+                submenuContainer.classList.remove('hide');
+                submenuContainer.innerHTML = '';
 
                 categories[category].forEach(subcategory => {
                     const div = document.createElement('div');
