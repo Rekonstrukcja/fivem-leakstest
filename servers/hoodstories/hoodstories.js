@@ -3,9 +3,10 @@ let currentImages = [];
 
 const categories = {
     lokalizacje: [
-        { name: "Domy", images: [""], description: "Domy na działce 1218", download: "" },
-        { name: "Plantacja zioła", images: ["ziolo.png"], description: "plantacja zioła znajduję się pod COLONY ISLAND numerek 7006", download: "" },
-        { name: "Plecaki", images: [""], description: "Dostępne na działce 4052 | 5k za plecak", download: "" }
+        { name: "Domy", images: ["dom1.png", "dom2.png"], description: "Zlecenia na łupanie domów", download: "" },
+        { name: "Plantacja zioła", images: ["ziolo1.png"], description: "Możesz tam sadzic zioło", download: "" },
+        { name: "Plecaki", images: ["plecak1.png", "plecak2.png", "plecak3.png"], description: "Zlecenia na plecaki", download: "" },
+        { name: "Flipper Zero", images: ["flipper1.png", "flipper2.png"], description: "Można zakupić flipper tutaj", download: "" },
         //         { name: "", images: [""], description: "", download: "" }
     ],
     skrypty: [
