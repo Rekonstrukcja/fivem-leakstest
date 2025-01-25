@@ -31,10 +31,10 @@ function showImage(imageIndex) {
     
     if (currentImages.length > 0) {
         map.src = `img/${currentImages[imageIndex]}`;
-        map.style.display = 'block'; // Wyświetlanie obrazu po jego ustawieniu
-        map.style.objectFit = 'cover'; // 
-        map.style.width = '600px'; // 
-        map.style.height = '600px'; // 
+        map.style.display = 'block'; 
+        map.style.objectFit = 'cover'; 
+        map.style.width = '600px';
+        map.style.height = '600px';
         document.getElementById('arrow-container').style.display = 'flex';
     } else {
         map.style.display = 'none';
