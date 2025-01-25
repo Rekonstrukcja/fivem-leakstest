@@ -4,22 +4,22 @@ body {
     padding: 0;
     background: url('../../img/background.svg') no-repeat center center fixed;
     background-size: cover;
-    overflow: hidden; /* blokuje przwijanie */
-    user-select: none; /* blokuje kopiowanie tekstu */
+    overflow: hidden; 
+    user-select: none; 
 }
 
 header {
     display: flex;
-    justify-content: space-between; /* Change to space-between */
+    justify-content: space-between; 
     align-items: center;
     padding: 30px; 
-    background-color: #151720; /* kolor backgroundu */
+    background-color: #151720; 
     color: white;
     position: fixed; 
     width: 100%; 
     top: 0; 
     z-index: 1000; 
-    border-bottom: 1px solid #a69f9d; /*border */
+    border-bottom: 1px solid #a69f9d; 
 }
 
 .header-container {
@@ -35,16 +35,16 @@ header {
 
 header h1 {
     margin: 0;
-    margin-top: -23px; /* Adjust this value as needed to raise the text */
+    margin-top: -23px; 
 }
 
 header img {
-    width: 50px; /* dostosowuje rozmiar logo */
-    height: 50px; /* dostosowuje rozmiar logo */
+    width: 50px; 
+    height: 50px;
 }
 
 #discord-icon {
-    position: fixed; /* discord icon pozycja */
+    position: fixed; 
     top: 15px;
     right: 30px;
     width: 60px;
@@ -55,18 +55,18 @@ header img {
 #content {
     display: flex;
     height: calc(100vh - 60px); 
-    overflow-y: auto; /* przwijanie w pionie */
+    overflow-y: auto; 
 }
 
 #item-list {
     width: 200px;
     margin-right: 20px;
     padding-left: 20px; 
-    overflow-y: auto; /* wlaczanie scrokolowanie */
+    overflow-y: auto; 
 }
 
 #item-list h2 {
-    font-family: 'Poppins', sans-serif; /* custom font uzyj */
+    font-family: 'Poppins', sans-serif; 
     font-weight: bold;
     cursor: pointer;
     margin: 0;
@@ -141,7 +141,7 @@ header img {
 #category-list li, #subcategory-list li {
     margin: 10px 0;
     cursor: pointer;
-    display: block; /* Wyświetlanie w jednym wierszu */
+    display: block; 
 }
 
 #item-display {
@@ -161,9 +161,9 @@ header img {
     left: 50%;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Upewnij się, że obraz pokrywa kwadrat */
+    object-fit: cover; 
     transform: translate(-50%, -50%);
-    display: none; /* Początkowo ukryj obraz */
+    display: none; 
 }
 
 #image-description {
@@ -175,17 +175,17 @@ header img {
     font-size: 18px;
     color: #333;
     text-align: center;
-    display: none; /* początkowo ukryj opis */
-    max-width: 400px; /* maksymalna iosc znakow w jednej linijce */
-    word-wrap: break-word; /* Upewnij się, że długie słowa przechodzą do następnej linii */
+    display: none; 
+    max-width: 400px; 
+    word-wrap: break-word; 
 }
 
-/* Usunięcie stylów dla starego kontenera border-square */
+
 #border-square-container, #border-square {
     display: none;
 }
 
-/* custom scroollbar */
+
 ::-webkit-scrollbar {
     width: 12px;
 }
@@ -203,7 +203,7 @@ header img {
     background: #555;
 }
 
-#gradient-rectangle { /* MAPA KWADRAT GLOWNY */
+#gradient-rectangle { 
     position: fixed;
     top: 50%;
     left: 50%;
@@ -212,11 +212,11 @@ header img {
     height: 600px;
     background: radial-gradient(circle, #2e2c55, #191836);
     border-radius: 15px;
-    z-index: 0; /* upewnij się, że znajduje się za innymi treściami */
-    border: 1px solid #6f685d; /*  */
+    z-index: 0; 
+    border: 1px solid #6f685d; 
 }
 
-#gradient-rectangle-vertical { /* OPIS KWADRAT GLOWNY */
+#gradient-rectangle-vertical {
     position: fixed;
     top: 475px;
     left: 1600px;
@@ -229,7 +229,7 @@ header img {
     border: 1px solid #6f685d; 
 }
 
-#map-container { /* mapa lokalizacja zdjecia */
+#map-container { 
     position: fixed;
     top: 50%;
     left: 50%;
@@ -244,10 +244,10 @@ header img {
 #map {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Upewnij się, że obraz obejmuje kontener */
+    object-fit: cover; 
 }
 
-#small-square-gold { /* DOWLOAD */
+#small-square-gold { 
     position: fixed;
     top: 625px; 
     left: 1325px; 
@@ -260,15 +260,15 @@ header img {
     transition: box-shadow 1s ease; 
 }
 
-#small-square-gold:hover { /* kwadrat wraz z glow */
-    box-shadow: 0 0 20px 10px #b9912c; /* glow */
+#small-square-gold:hover {
+    box-shadow: 0 0 20px 10px #b9912c; 
     transition: box-shadow 1s ease; 
     -webkit-box-shadow: inset 0px 0px 80px -27px rgba(185, 145, 44, 1);
     -moz-box-shadow: inset 0px 0px 80px -27px rgba(185, 145, 44, 1);
     box-shadow: inset 0px 0px 80px -27px rgba(185, 145, 44, 1);
 }
 
-#small-square-purple { /* OPIS */
+#small-square-purple { 
     position: fixed;
     top: 200px; 
     left: 1325px; 
@@ -281,7 +281,7 @@ header img {
     transition: box-shadow 1s ease; 
 }
 
-#small-square-purple:hover { /* kwadrat wraz z glow */
+#small-square-purple:hover { 
     box-shadow: 0 0 20px 10px #8e33f6; 
     transition: box-shadow 1s ease; 
     -webkit-box-shadow: inset 0px 0px 80px -27px rgba(142, 51, 246, 1);
@@ -289,7 +289,7 @@ header img {
     box-shadow: inset 0px 0px 80px -27px rgba(142, 51, 246, 1);
 }
 
-#small-square-below-location { /* SERWER INFO */
+#small-square-below-location { 
     position: fixed;
     top: 90%; 
     left: 83.3%;
@@ -318,7 +318,7 @@ header img {
     color: #ffffff; 
 }
 
-#description-text { /* TEKST OPIS */
+#description-text { 
     position: absolute;
     top: 10%; 
     left: 50%;
@@ -331,7 +331,7 @@ header img {
     text-shadow: 0px 2px 34px rgba(13, 13, 41, 1);
 }
 
-#download-text { /* TEKST DOWNLOAD */
+#download-text { 
     position: absolute;
     top: 50%;
     left: 50%;
@@ -346,7 +346,7 @@ header img {
 }
 
 
-#small-square-left { /* MENU INFO */
+#small-square-left { 
     position: fixed;
     top: 180px; 
     left: 30px; 
@@ -408,7 +408,6 @@ header img {
     display: block; 
 }
 
-/* MENU KORDY */
 #menu-container {
     display: flex;
     flex-direction: column;
@@ -436,7 +435,7 @@ header img {
     background: #191836;
 }
 
-#submenu-container { /* SUBMENU KORDY */
+#submenu-container { 
     display: flex;
     flex-direction: column;
     width: 200px;
@@ -494,7 +493,6 @@ img {
     pointer-events: none; 
 }
 
-/* ...nowy kodzik pedalki... */
 
 #arrow-container {
     display: none; 
@@ -518,5 +516,3 @@ img {
 #left-arrow:hover, #right-arrow:hover {
     box-shadow: 0 0 115px -12px rgba(0, 0, 255, 0.61); 
 }
-
-/* ...dalej dalej dalejdadasdaw... */
