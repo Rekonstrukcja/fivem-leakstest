@@ -5,7 +5,9 @@ const categories = {
     lokalizacje: [
         { name: "Wycinka kata", images: ["kat1.png", "kat2.png"], description: "Wyciannie katów z samochodów, udajecie sie do lomabardu aby zakupic diaxa a nastepnie wycinacie katy", download: "" },
         { name: "Crime Stół", images: ["stol1.png", "stol2.png", "stol3.png"], description: "Można craftować tam kosy", download: "" },
-        { name: "Krystan", images: ["krystian1.png", "krystian2.png", "krystian3.png"], description: "Krystan ktory opierdala info za pojebana cena i szkielet broni", download: "" },
+        { name: "Krystan", images: ["krystian1.png", "krystian2.png", "krystian3.png"], description: "Krystan ktory opierdala info za pojebana cena i szkielet broni -- 27/01 USUNELI", download: "" },
+        { name: "Trucker", images: ["trucker1.png", "trucker2.png", "trucker3.png", "trucker4.png", "trucker5.png", "trucker6.png", "trucker7.png", "trucker8.png", "trucker9.png", "trucker10.png", "trucker11.png"], description: "Minimum 1 pd. 2250-3000 zł. Po odebraniu zlecenia dostajecie item DIGI SCANNER nim szukacie auta, po znalezieniu i bedac niego (pojawi się na tym urządzeniu takie zielone) blisko klikacie E i robicie minigierkę. Podsyłam również lokalizacje gdzie respią się auta po wzieciu zlecenia.", download: "" },
+        { name: "NPC Zioło", images: ["ziolo1.png", "ziolo2.png", "ziolo3.png", "ziolo4.png"], description: "Kupicie u niego nasiona do sadzenia zioła", download: "" }
         //         { name: "", images: [""], description: "", download: "" }
     ],
     dump: [
