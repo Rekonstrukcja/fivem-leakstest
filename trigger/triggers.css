@@ -169,3 +169,11 @@ main {
 .copy-button.copied {
     background: #4caf50;
 }
+.header-container a.header-link {
+    text-decoration: none;
+    color: inherit; /* Ustawia kolor na dziedziczony */
+}
+
+.header-container a.header-link:hover {
+    color: inherit; /* Ustawia kolor na dziedziczony również po najechaniu */
+}
