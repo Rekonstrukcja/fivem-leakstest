@@ -212,7 +212,7 @@ end
     });
 
     const susanoLink = document.createElement('a');
-    susanoLink.href = 'susano-konwerter.html';
+    susanoLink.href = 'susano-konwerter';
     susanoLink.textContent = 'SUSANO KONWERTER';
     susanoLink.style.color = 'white';
     susanoLink.style.marginRight = '20px';
