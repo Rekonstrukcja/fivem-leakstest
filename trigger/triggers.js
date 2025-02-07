@@ -210,4 +210,14 @@ end
             });
         });
     });
+
+    const susanoLink = document.createElement('a');
+    susanoLink.href = 'susano-konwerter.html';
+    susanoLink.textContent = 'SUSANO KONWERTER';
+    susanoLink.style.color = 'white';
+    susanoLink.style.marginRight = '20px';
+    susanoLink.style.cursor = 'pointer';
+
+    const header = document.querySelector('header');
+    header.insertBefore(susanoLink, header.firstChild);
 });
