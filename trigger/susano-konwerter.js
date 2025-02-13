@@ -41,7 +41,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     } else {
                         result.push(`${'    '.repeat(indentLevel)}TriggerEvent('${eventName}')`);
                     }
-                    result.push(`${'    '.repeat(indentLevel)}-- LeakM.fun`);
                 } else {
                     result.push(`${'    '.repeat(indentLevel)}${trimmedLine}`);
                 }
