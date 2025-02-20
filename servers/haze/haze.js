@@ -3,23 +3,18 @@ let currentImages = [];
 
 const categories = {
     lokalizacje: [
-        { name: "Crafting", images: ["crafting1.png", "crafting2.png"], description: "", download: "" },
-        { name: "Zlecenie grupe6", images: ["grupe61.png", "grupe62.png"], description: "Zlecenia na napad na furgon grupy6. Drop: 33500$-45500$, karta pracownika 30%", download: "" },
-        { name: "Zlecenia domy", images: ["dom1.png", "dom2.png", "dom3.png", "dom4.png"], description: "Zlecenia na opierdalanie domów", download: "" },
-        { name: "Biżuteria", images: ["jew1.png"], description: "Po napadzie na jewilery (min 6 pd, zysk: 95000-180000$)", download: "" },
-        { name: "DarkShop", images: ["darkshop1.png", "darkshop2.png", "darkshop3.png"], description: "", download: "" },
-        { name: "KlamaZiom", images: ["klamaziom1.png", "klamaziom2.png", "klamaziom3.png"], description: "", download: "" },
-        { name: "Pojeb", images: ["pojeb1.png", "pojeb2.png", "pojeb3.png"], description: "", download: "" },
-        { name: "Materiały", images: ["wybuch1.png", "wybuch2.png"], description: "Sprzedaż materiałów wybuchowych", download: "" },
-        { name: "CocaShop", images: ["cocashop1.png", "cocashop2.png", "cocashop3.png"], description: "", download: "" },
-        { name: "Dodatki", images: ["dodatki1.png", "dodatki2.png", "dodatki3.png"], description: "", download: "" },
+        { name: "Crafting", images: ["crafting1.png", "crafting2.png", "crafting3.png"], description: "Crafting broni itp -- 1618.6, 2803.7, 16.7, 39.2", download: "" },
+        { name: "Lotniskowy Haker", images: ["haker1.png", "haker2.png", "haker3.png"], description: "-1085.3, -2791.1, 20.8", download: "" },
+        { name: "DarkShop", images: ["darkshop1.png", "darkshop2.png", "darkshop3.png"], description: "-950.1, 209.5, 67.7", download: "" },
+        { name: "DarkShop2", images: ["darkshop21.png", "darkshop22.png", "darkshop23.png"], description: "-277.7, 2205.3, 130.3", download: "" },
+        { name: "Dodatki do broni", images: ["dodatki1.png", "dodatki2.png", "dodatki3.png"], description: "-505.3, -2910.2, 14.9", download: "" },
 
 
         //         { name: "", images: [""], description: "", download: "" },
     ],
     narko: [
-        { name: "Kokaina", images: ["koka1.png"], description: "Gotowanie kokainy", download: "" },
-        { name: "Heroina", images: ["hera1.png", "hera2.png"], description: "Respawn heroiny", download: "" },
+        { name: "Meta", images: ["meta1.png", "meta2.png"], description: "Tu robicie mete, uwazajcie bo campia", download: "" },
+        { name: "Weed", images: ["weed1.png", "weed2.png", "weed3.png"], description: "Strefy sadzenia ziola. -35.8, 3026.7, 40.9 | 752.7, 2784.5, 66.9 | 1537.7, 2318.1, 71.0", download: "" },
  
     ]
         //         { name: "", images: [""], description: "", download: "" }
@@ -139,7 +134,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // 999 ZMIEN API ZA KAZDYM RAZEM API SERWERA LICZBA GRACZY
-    fetch('https://servers-frontend.fivem.net/api/servers/single/blqdbp')
+    fetch('https://servers-frontend.fivem.net/api/servers/single/zkyox5')
         .then(response => response.json())
         .then(data => {
             const playerCount = data.Data.clients;
