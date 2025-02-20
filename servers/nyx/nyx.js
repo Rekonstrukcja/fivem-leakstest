@@ -8,7 +8,7 @@ const categories = {
         //         { name: "", images: [".png"], description: "", download: "" },
     ],
     narko: [
-        { name: "Weed NPC", images: ["weed1.png", "weed2.png", "weed3.png"], description: "1729.566, 1093.736, 29.30242", download: "" },
+        { name: "Weed NPC", images: ["weed1.png", "weed2.png", "weed3.png"], description: "Tylko za brudna kupicie. 1729.566, 1093.736, 29.30242", download: "" },
  
         //         { name: "", images: [".png"], description: "", download: "" },
     ],
