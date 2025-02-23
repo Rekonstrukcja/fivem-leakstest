@@ -10,14 +10,23 @@ const categories = {
         { name: "Kasetka", images: [""], description: "MinPD: 1 | Wymagana broń: łom | Nagroda: 1000-5000 brudnej | Cooldown: 180 minut", download: "" },
         { name: "WeedShop", images: [""], description: "MinPD: 5 | Cooldown: 120m | Drop z kasetki: money-black 200-8000, Drop z sejfu: money-black 5000-12000, kluczyk 15% szans na wydropienie (kluczyk może służyć do otwarcia zamkniętej walizki), zlecenie na łódke 40% szans na wydropienie, Drop z stołu: x1 weed_pack", download: "" },
 
-        //         { name: "", images: [""], description: "", download: "" }
+        //         { name: "", images: [""], description: "", download: "" },
     ],
     lokalizacje: [
         { name: "Tablet", images: ["tablet1.png", "tablet2.png"], description: "Tablet do trenowania minigierek", download: "" },
         { name: "Baśka", images: ["baska1.png", "baska2.png", "baska3.png"], description: "", download: "" },
- 
+        { name: "Stół A", images: ["stola1.png", "stola2.png", "stola3.png", "stola4.png", "stola5.png"], description: "Stół rzemiśliczy na hucie", download: "" },
+        { name: "Stół B", images: ["stolb1.png", "stolb2.png", "stolb3.png"], description: "Kolejny stół", download: "" },
+        { name: "Stół C | Kamizelka 1", images: ["stolc1.png", "stolc2.png", "stolc3.png", "stolc4.png"], description: "Kamizelki LVL 1", download: "" },
+        { name: "Stół D | Kamizelka 2", images: ["stold1.png", "stold2.png", "stold3.png"], description: "Kamizelki LVL 2", download: "" },
+        { name: "Stół E | Kamizelka 3", images: ["stole1.png", "stole2.png"], description: "Kamizelki LVL 3", download: "" },
+        { name: "Stół F | Kamizelka 4", images: ["stolf1.png", "stolf2.png"], description: "Kamizelki LVL 4", download: "" },
+        { name: "Stół G", images: ["stolg1.png", "stolg2.png", "stolg3.png"], description: "", download: "" },
+        { name: "Stół H", images: ["stolh1.png", "stolh2.png", "stolh3.png", "stolh4.png"], description: "next craft w podziemiach. od tej stacji chyba najszybciej sie dostaniesz", download: "" },
+        { name: "Stół I", images: ["stoli1.png", "stoli2.png", "stoli3.png"], description: "", download: "" },
+
     ]
-        //         { name: "", images: [""], description: "", download: "" }
+        //         { name: "", images: [".png"], description: "", download: "" },
 };
 
 function showImage(imageIndex) {
