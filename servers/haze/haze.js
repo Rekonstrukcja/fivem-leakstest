@@ -3,10 +3,10 @@ let currentImages = [];
 
 const categories = {
     lokalizacje: [
-        { name: "Crafting", images: ["crafting1.png", "crafting2.png", "crafting3.png"], description: "Crafting broni itp -- 1618.6, 2803.7, 16.7, 39.2", download: "" },
+        { name: "Crafting", images: ["crafting1.png", "crafting2.png", "crafting3.png"], description: "Crafting -- 2590.95, 6158.79, 165.79", download: "" },
         { name: "Lotniskowy Haker", images: ["haker1.png", "haker2.png", "haker3.png"], description: "-1085.3, -2791.1, 20.8", download: "" },
-        { name: "DarkShop", images: ["darkshop1.png", "darkshop2.png", "darkshop3.png"], description: "-950.1, 209.5, 67.7", download: "" },
-        { name: "DarkShop2", images: ["darkshop21.png", "darkshop22.png", "darkshop23.png"], description: "-277.7, 2205.3, 130.3", download: "" },
+        { name: "DarkShop", images: ["darkshop1.png", "darkshop2.png", "darkshop3.png"], description: "DarkShop 1 -- 862.2, 2877.6, 57.9", download: "" },
+        { name: "DarkShop2", images: ["darkshop21.png", "darkshop22.png", "darkshop23.png"], description: "DarkShop 2 (klamaziom) -- -3099.0, 409.1, 2.3", download: "" },
         { name: "Dodatki do broni", images: ["dodatki1.png", "dodatki2.png", "dodatki3.png"], description: "-505.3, -2910.2, 14.9", download: "" },
 
 
