@@ -5,7 +5,7 @@ const categories = {
     lokalizacje: [
         { name: "Crafting", images: ["crafting1.png", "crafting2.png", "crafting3.png"], description: "Crafting -- 2590.95, 6158.79, 165.79", download: "" },
         { name: "Lotniskowy Haker", images: ["haker1.png", "haker2.png", "haker3.png"], description: "-1085.3, -2791.1, 20.8", download: "" },
-        { name: "DarkShop", images: ["darkshop1.png", "darkshop2.png", "darkshop3.png"], description: "DarkShop 1 -- 862.2, 2877.6, 57.9", download: "" },
+        { name: "DarkShop", images: ["darkshop1.png", "darkshop3.png"], description: "DarkShop 1 -- 995.7, 3568.8, 33.6", download: "" },
         { name: "DarkShop2", images: ["darkshop21.png", "darkshop22.png", "darkshop23.png"], description: "DarkShop 2 (klamaziom) -- -3099.0, 409.1, 2.3", download: "" },
         { name: "Dodatki do broni", images: ["dodatki1.png", "dodatki2.png", "dodatki3.png"], description: "-505.3, -2910.2, 14.9", download: "" },
 
@@ -14,7 +14,7 @@ const categories = {
     ],
     narko: [
         { name: "Meta", images: ["meta1.png", "meta2.png"], description: "Tu robicie mete, uwazajcie bo campia", download: "" },
-        { name: "Weed", images: ["weed1.png", "weed2.png", "weed3.png"], description: "Strefy sadzenia ziola. -35.8, 3026.7, 40.9 | 752.7, 2784.5, 66.9 | 1537.7, 2318.1, 71.0", download: "" },
+        { name: "Weed", images: ["weed1.png", "weed2.png", "weed3.png"], description: "WeedZone -- miejsca do sadzenia ziola", download: "" },
  
     ]
         //         { name: "", images: [""], description: "", download: "" }
