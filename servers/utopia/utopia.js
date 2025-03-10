@@ -5,8 +5,11 @@ const categories = {
     lokalizacje: [
         { name: "Domki", images: ["dom2.png", "dom1.png"], description: "Łupanie domów", download: "" },
         { name: "Paser", images: ["paser1.png", "paser2.png"], description: "Paser, sprzedajecie tam itemy z domow", download: "" },
-        { name: "Tracker", images: ["tracker1.png", "tracker2.png"], description: "Tracker, wymagane tracker_info ktorego nie da sie zdobyc", download: "" },
- 
+        { name: "Tracker", images: ["tracker1.png", "tracker2.png"], description: "Tracker -- -521.327454, 165.032974, 70.067383. Item potrzebny do łupania bierzesz z okradania npc", download: "" },
+        { name: "Paczki", images: ["paczki1.png", "paczki2.png", "paczki3.png"], description: "Branie zlecenia na kradziez paczek, wymagany wytrych. -- 2147.538574, 4778.175781, 43.888672", download: "" },
+        { name: "Crafting", images: ["crafting1.png", "crafting2.png"], description: "Crafting -- 891.432, 3612.369, 32.824", download: "" },
+
+
         //         { name: "", images: [".png"], description: "", download: "" },
     ],
     narko: [
